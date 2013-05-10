@@ -1,0 +1,153 @@
+.content * {
+    margin: 0;
+    padding:0;
+    list-style-type: none;
+}
+.content {
+    width: 692px;
+    
+}
+.content img {
+    margin: 0;
+}
+.content p {
+    color: #747678;
+    font: 500 12px Arial;
+}
+.content p strong { font-weight: bold;}
+.content h1.dm-template-title {
+    color: #007E7A;
+    font: 500 19px/14px 'CaeciliaLTStd-Bold';
+    margin: 0;
+}
+
+.content h2 {
+    color: #ebac12;
+    font: 500 19px/14px 'CaeciliaLTStd-Bold';
+    margin: 15px 0;
+    display: block;
+}
+.content h3 {
+    color: #747678;
+    font: 500 14px Arial;
+    padding: 15px;
+    width: 100%;
+    background: #f7f7f7;
+    margin-bottom: 25px;
+    -moz-box-sizing:border-box;- 
+    webkit-box-sizing:border-box; 
+    box-sizing:border-box; 
+
+}
+.content h3 strong {
+    font: 500 18px Arial;
+}
+.content fieldset{
+    border: 1px solid #dddedf;
+    border-radius: 10px;
+    width: 324px;
+    *width:284px;
+    padding: 20px 32px;
+    -moz-box-sizing:border-box;- 
+    webkit-box-sizing:border-box; 
+    box-sizing:border-box;
+
+}
+.content .list {
+    border: 1px solid #dddedf;
+    border-radius: 10px;
+    width: 324px;
+    padding-left: 0 !important;
+}
+.content fieldset label {
+    color: #9a9b9d;
+    font-weight: 500;
+    font-family: Arial, Verdana, Sans-serif;
+    font-size: 12px;
+    width: 100%;
+    clear: both;
+}
+.content .coleft {
+    width: 326px;
+    float: left;
+}
+.content .colright {
+    width: 326px;
+    float: right;
+}
+.content .colright fieldset,
+.content .colright > ul {
+    float: right;
+}
+.content .btn input {
+    color: #007E7A;
+    font: 15px/21px 'CaeciliaLTStd-Roman';
+    background: none;
+    border: none;
+    float: right;
+    display: block;
+    cursor: pointer;
+}
+.content .box-colunas {
+    clear: both;
+    display: table;
+    width: 100%;
+    margin-bottom: 25px;
+}
+.content ul li a {
+    color: #007e7a !important;
+    font: bold 14px Arial;
+    background: #fafafa;
+    text-decoration: none;
+    text-indent: 10px;
+    border-top: 1px solid #dddedf;
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    cursor: pointer !important;
+    -moz-box-sizing:border-box;- 
+    webkit-box-sizing:border-box; 
+    box-sizing:border-box;
+}
+.content ul li a:hover {
+    background-color: #747678;
+    color:white !important;
+    text-decoration: none !important;
+    -o-transition:color .8s ease-out, background .2s ease-in;
+    -ms-transition:color .8s ease-out, background .2s ease-in;
+    -moz-transition:color .8s ease-out, background .2s ease-in;
+    -webkit-transition:color .8s ease-out, background .2s ease-in;
+    transition:color .8s ease-out, background .2s ease-in;
+}
+.content ul li a.bdtop {
+    border-radius:10px 10px 0 0;
+    border-top: none;
+}
+.content ul li a.bdbto {
+    border-radius:0 0 10px 10px;
+}
+.content ul li ul { padding-left: 0 !important;}
+.content ul li ul li a{
+    text-indent: 20px;
+}
+.content ul li ul li ul { padding-bottom: 10px; display: none;}
+
+.content ul li ul li ul li a{
+    border-top: 0;
+    padding: 5px 0;
+    text-indent: 30px;
+}
+
+.content ul li ul li a{
+    color: #747678 !important;
+    font: 500 12px Arial;
+    background: transparent;
+}
+#resultado {display: none;}
+
+.content span.selectstyle{display:block;overflow:hidden;position:relative;height:38px}
+.content .Styled{vertical-align:middle}
+.content select.Styled{position:relative;z-index:10;cursor:pointer; width: 260px;}
+.content select.Styled.hiddenStyle{filter:alpha(opacity=0);opacity:0}
+.content span.Styled{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;background-image:url('https://intranet.valeglobal.net/sa/brasil/pt-br/servicos/facilidades/PublishingImages/arrow.png');background-position:right center;background-color:#fff;background-repeat:no-repeat;color:#858276;position:absolute;top:0;left:0;z-index:9;display:block;line-height:24px;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;border:1px solid #dddedf;font-size:11px;height:26px;padding:0 10px; font-family: Arial,Verdana,Sans-serif}
+.content .ir{text-indent:-99999px;overflow:hidden;display:block}

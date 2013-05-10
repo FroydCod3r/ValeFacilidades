@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intranet Vale | Infográfico de Mapeamento de facilidades</title>
+    
+    <!--<link rel="stylesheet" type="text/css" href="css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="js/facilidades.js" />
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.1.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://intranet.valeglobal.net/sa/brasil/pt-br/servicos/facilidades/Documents/screen.css" />
+    <script src="https://intranet.valeglobal.net/sa/brasil/pt-br/servicos/facilidades/Documents/facilidades.js"></script>-->
+    
+</head>
+<body>
+    <link rel="stylesheet" type="text/css" href="https://intranet.valeglobal.net/sa/brasil/pt-br/servicos/facilidades/Documents/screen.css" />
+    <script src="https://intranet.valeglobal.net/sa/brasil/pt-br/servicos/facilidades/Documents/jquery-1.9.1.js"></script>
+    <script src="https://intranet.valeglobal.net/sa/brasil/pt-br/servicos/facilidades/Documents/jquery-migrate-1.2.1.js"></script>
+    <script src="https://intranet.valeglobal.net/sa/brasil/pt-br/servicos/facilidades/Documents/facilidades.js"></script>
+
+    <div class="content">
+        <!--<h1 class="dm-template-title">Facilidades</h1>
+        <img src="https://intranet.valeglobal.net/sa/brasil/pt-br/servicos/facilidades/PublishingImages/banner_facilidades.png" alt="Mapeamento de Facilidades" />-->
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa.</p>
+        <div class="box-colunas">
+            <h2>Realizar nova pesquisa</h2>
+            <div class="coleft">
+                <fieldset>
+                    <div>
+                        <label>Unidade</label>
+                        <span class="selectstyle">
+                            <select name="unidade" id="seleciona-unidade" class="Styled">
+                                <option value="">Selecione</option>
+                            </select>
+                    </span>
+                    </div>
+                    <div class="btn">
+                        <input type="submit" id="btn-unidade" name="envia-unidade" value="pesquisar" />
+                    </div>
+                </fieldset>
+            </div>
+            <div class="colright">
+                <fieldset>
+                    <div>
+                        <label>Estado</label>
+                        <span class="selectstyle">
+                            <select name="estado" id="seleciona-estado" class="Styled">
+                                <option value="Selecione">Selecione</option>
+                            </select>
+                        </span>
+                    </div>
+                    <div>
+                        <label>Cidade</label>
+                        <span class="selectstyle">
+                            <select name="cidade" id="seleciona-cidade" class="Styled">
+                                <option value="Selecione">Selecione</option>
+                            </select>
+                        </span>
+                    </div>
+                    <div class="btn">
+                        <input type="submit" id="btn" name="envia-unidade" value="pesquisar" />
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+
+        <!-- resultado -->
+        <div id="resultado">
+            <h3><span id="operacao"></span> - <span id="estado"></span></h3>
+            <div class="box-colunas">
+                <h2>Mais informações</h2>
+                <div class="coleft">
+                    <p><strong>Endereço:</strong></p>
+                    <p id="endereco"></p>
+                </div>
+                <div class="colright">
+                    <p><strong>Telefones:</strong></p>
+                    <p id="telefone"></p>
+                </div>
+            </div>
+            <div class="box-colunas">
+                <div class="coleft">
+                    <ul class="list">
+                        <li><a href="javascript:void(0);">Alimentação</a>
+                            <ul>
+                                <li><a href="javascript:void(0);" id="convenio-proprio"></a></li>
+                                <li><a href="javascript:void(0);" id="convenio-restaurante"></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">Esporte e Lazer</a>
+                            <ul>
+                                <li><a href="javascript:void(0);" id="area-lazer"></a></li>
+                                <li><a href="javascript:void(0);" id="atividades-especiais"></a></li>
+                                <li><a href="javascript:void(0);" id="atividades-visitantes"></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">Saúde</a>
+                            <ul>
+                                <li><a href="javascript:void(0);" id="posto-medico"></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">Segurança</a>
+                            <ul>
+                                <li><a href="javascript:void(0);" id="epi"></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="colright">
+                    <ul class="list">
+                        <li><a href="javascript:void(0);">Serviços</a>
+                            <ul>
+                                <li><a href="javascript:void(0);" id="igrejas"></a></li>
+                                <li><a href="javascript:void(0);" id="correio"></a></li>
+                                <li><a href="javascript:void(0);" id="supermercado"></a></li>
+                                <li><a href="javascript:void(0);" id="farmacia"></a></li>
+                                <li><a href="javascript:void(0);" id="bancos"></a>
+                                    <!--<ul>
+                                        <li><a href="javascript:void(0);">Nome do Banco 1</a></li>
+                                        <li><a href="javascript:void(0);">Nome do Banco 2</a></li>
+                                        <li><a href="javascript:void(0);">Nome do Banco 3</a></li>
+                                        <li><a href="javascript:void(0);">Nome do Banco 4</a></li>
+                                        <li><a href="javascript:void(0);">Nome do Banco 5</a></li>
+                                        <li><a href="javascript:void(0);">Nome do Banco 6</a></li>
+                                    </ul>-->
+                                </li>
+                                <li><a href="javascript:void(0);" id="posto-gasolina"></a></li>
+                                <li><a href="javascript:void(0);" id="coleta"></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script type="text/javascript">
+  
+    var infos = {
+        estado: null,
+        cidade: null,
+        operacao: null,
+    }
+    $(document).ready(function(){
+        /*function pageLoad() {*/
+
+        $('select.Styled').customized();
+        $('.coleft ul.list li:first a:first , .colright ul.list li:first a:first').addClass('bdtop');
+        $('.coleft ul.list li:last a:last , .colright ul.list li:last a:last').addClass('bdbto');
+        $('ul li ul li a').click(function(){
+            $(this).next('ul').toggle('fast');
+        });
+               $.getJSON("/sa/brasil/pt-br/servicos/facilidades/Documents/dadosnew.json", function(data){
+
+                    var estado = [];
+
+                    $.each(data.geral, function(i,item){
+                        $("#seleciona-unidade").append("<option value='"+item["id"]+"'>"+item["operação"] +"</option>");
+                        estado.push(item["estado"]);
+       
+                    });
+                    var vestado = array_unique(estado);
+                    
+
+                    $.each(vestado, function(i,item){
+                        $("#seleciona-estado").append("<option value='"+item+"'>"+item +"</option>");
+                    });
+
+
+                     $("#seleciona-estado").change(function(){
+                        infos.estado = this.value;
+                        var t = this;
+                        var cidades = [];
+                        $.each(data.geral, function(i,item){
+                            
+                            if(t.value == item["estado"]) cidades.push(item["cidade"]);
+                        });
+
+                        var vcidades = array_unique(cidades);
+                       
+                        var $xxx = $("#seleciona-cidade").empty().on('change',function(){
+                            infos.cidade = this.value;
+                            $.each(data.geral, function(i,item){
+                                if(infos.cidade == item["cidade"] && infos.estado == item["estado"]) infos.item = item;
+                            });
+
+                            $("#resultado").show("slow");
+                            $("#operacao").html("<strong>"+infos.item["operação"]+"</strong>");
+                            $("#estado").html(infos.item["estado"]);
+                            $("#endereco").html(infos.item["endereço"]);
+                            $("#telefone").html(infos.item["telefone"]);
+                            $("#convenio-proprio").html("Restaurante ou Refeitório Próprio: "+infos.item["restaurante refeitório próprio"]);
+                            $("#convenio-restaurante").html("Convênio com Restaurantes: "+infos.item["convênio com restaurantes"]);
+                            $("#area-lazer").html("Área de Lazer: "+infos.item["áreas de lazer (quadra de futebol, clube, praças etc)"]);
+                            $("#atividades-especiais").html("Atividades Especiais: "+infos.item["atividades especiais - aula de ginástica laboral etc"]);
+                            $("#atividades-visitantes").html("Atividades para Visitantes: "+infos.item["atividades para visitantes"]);
+                            $("#posto-medico").html("Posto médico ou Hospital: "+infos.item["posto médico hospital"]);
+                            $("#epi").html("Necessidadede uso de uniforme e EPI: "+infos.item["necessidade de uso de uniforme e de epi"]);
+                            $("#igrejas").html("Igrejas e Templos religiosos: "+infos.item["igrejas e templos religiosos"]);
+                            $("#correio").html("Serviços de Correio ou Malote: "+infos.item["serviços de correios e malote"]);
+                            $("#supermercado").html("Supermercado ou Mercearia: "+infos.item["supermercado mercearia"]);
+                            $("#farmacia").html("Farmácia: "+infos.item["farmácia"]);
+                            $("#bancos").html("Bancos: "+infos.item["bancos"]);
+                            $("#posto-gasolina").html("Posto de Gasolina: "+infos.item["posto de gasolina"]);
+                            $("#coleta").html("Coleta Seletiva: "+infos.item["coleta seletiva de lixo"]);
+                        });
+                        $.each(vcidades, function(i,item){
+                            $xxx.append("<option value='"+item+"'>"+item +"</option>");
+                        });
+                    });
+                });
+    /*});*/
+
+
+function array_unique (inputArr) {
+  var key = '',
+    tmp_arr2 = {},
+    val = '';
+
+  var __array_search = function (needle, haystack) {
+    var fkey = '';
+    for (fkey in haystack) {
+      if (haystack.hasOwnProperty(fkey)) {
+        if ((haystack[fkey] + '') === (needle + '')) {
+          return fkey;
+        }
+      }
+    }
+    return false;
+  };
+
+  for (key in inputArr) {
+    if (inputArr.hasOwnProperty(key)) {
+      val = inputArr[key];
+      if (false === __array_search(val, tmp_arr2)) {
+        tmp_arr2[key] = val;
+      }
+    }
+  }
+
+  return tmp_arr2;
+}
+    /*}*/
+});
+</script>
+
+
+
+</body>
+</html>
